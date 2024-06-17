@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    height: 60px;
+}
+
+.navbar .nav-link {
+    margin: 0 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.auth-buttons .nav-link {
+    margin: 0 10px;
+}
+
+.content-cont{
+    height: 100vh;
+}
+
+.main-content {
+    height: 100%;
+    border: 1px solid #D3D3D3;
+}
+
+.sidebar {
+    height: 100%;
+    border: 1px solid #D3D3D3;
+}

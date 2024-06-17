@@ -1,0 +1,26 @@
+.main-cont{
+    padding: 30px;
+}
+.main-head{
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+}
+table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+.text_input{
+    width: 100%;
+}
+input,textarea{
+    outline: none;
+}
+.btn-cont{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task-4</title>
+
+    <style>
+        .main-cont{
+            padding: 30px;
+        }
+        table{
+            width: 100%;
+        }
+        th{
+            text-align: left;
+        }
+        .text_input{
+            width: 80%;
+        }
+        .btn-cont{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-cont">
+        <div>
+            <table>
+                <tr>
+                    <th><label for="first_name" class="label">First Name:</label></th>
+                    <td><input type="text" id="first_name" class="text_input"/></td>
+                </tr>
+                <tr>
+                    <th><label for="user_name" class="label">User Name:</label></th>
+                    <td><input type="text" id="user_name" class="text_input"/></td>
+                </tr>
+                <tr>
+                    <th><label for="password" class="label">Password:</label></th>
+                    <td><input type="password" id="password" class="text_input"/></td>
+                </tr>
+                <tr>
+                    <th><label for="re_password" class="label">Re-Enter Password:</label></th>
+                    <td><input type="password" id="re_password" class="text_input"/></td>
+                </tr>
+                <tr>
+                    <th><label for="address" class="label">Address:</label></th>
+                    <td><input type="text" id="address" class="text_input"/></td>
+                </tr>
+                <tr>
+                    <th><label for="age" class="label">Age:</label></th>
+                    <td><input type="number" id="age" class="text_input"/></td>
+                </tr>
+                <tr>
+                    <th><label for="gender" class="label">Gender:</label></th>
+                    <td>
+                        <select name="gender" id="gender" class="select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <table>
+                        <tr>
+                            <td><button>save</button></td>
+                        </tr>
+                    </table>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

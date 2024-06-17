@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: rgba(253,190,51,255);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+#nav-one{
+    width:80%;
+    display:flex;
+    gap:15rem;
+}
+
+#nav-two{
+    width:80%;
+}
+#icons{
+    display:flex;
+    gap:2rem;
+    margin-top: 10px;
+}
+#name{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+#clock,#call-us,#email{
+    position:relative;
+    left:20px;
+}
+
+#nav-two{
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+    color:white;
+    background-color: black;
+}
+#sub-nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+}
+.box:hover{
+    color:rgba(253,190,51,255);
+}
+
+img{
+    width:100vw;
+    height:100vh;
+}
+
+#footer{
+    width:100.8vw;
+    min-height:120px;
+    margin:-10px;
+    display:flex;
+    justify-content: space-evenly;
+    color:rgba(253,190,51,255);
+    background-color: black;
+}
+.items{
+    display:flex;
+    justify-content: stretch;
+    margin-top: 20px;
+    padding-left: 20px;
+    width:33.333%;
+}
+
+#worker, #build,#support{
+    position:relative;
+    top:0.5rem;
+    margin-right:10px;
+}
+
+#footer p{
+    font-size: 1rem;
+}
+
+.items:hover{
+    background-color: rgba(253,190,51,255);
+    color:black;
+}

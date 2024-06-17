@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    border:3px solid black;
+    width:80%;
+    height:90vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display:flex;
+    gap:3rem;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#red{
+    background-color: red;
+}
+#black{
+    background-color: black;
+}
+#green:hover, #blue:hover, #red:hover, #black:hover{
+    background-color: blueviolet;
+}
+.box{
+    margin-top:10px;
+    width:7rem;
+    height:7rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#mini-2{
+    line-height: 3rem;
+}

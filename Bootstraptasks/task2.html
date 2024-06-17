@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task-2</title>
+    <style>
+      *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: rgba(253,190,51,255);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+#nav-one{
+    width:80%;
+    display:flex;
+    gap:15rem;
+}
+
+#nav-two{
+    width:80%;
+}
+#icons{
+    display:flex;
+    gap:2rem;
+    margin-top: 10px;
+}
+#name{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+#clock,#call-us,#email{
+    position:relative;
+    left:20px;
+}
+
+#nav-two{
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+    color:white;
+    background-color: black;
+}
+#sub-nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+}
+.box:hover{
+    color:rgba(253,190,51,255);
+}
+
+img{
+    width:100vw;
+    height:100vh;
+}
+
+#footer{
+    width:100.8vw;
+    min-height:120px;
+    margin:-10px;
+    display:flex;
+    justify-content: space-evenly;
+    color:rgba(253,190,51,255);
+    background-color: black;
+}
+.items{
+    display:flex;
+    justify-content: stretch;
+    margin-top: 20px;
+    padding-left: 20px;
+    width:33.333%;
+}
+
+#worker, #build,#support{
+    position:relative;
+    top:0.5rem;
+    margin-right:10px;
+}
+
+#footer p{
+    font-size: 1rem;
+}
+
+.items:hover{
+    background-color: rgba(253,190,51,255);
+    color:black;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+       <div id="nav-one">
+        <div id="name">Builderz</div>
+        <div id="icons">
+            <div id="clock"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+            </svg></div>
+            <div>Opening Hour<br>Mon-Fri, 8:00-9:00</div>
+            <div id="call-us">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            </div>
+            <div>Call Us<br>+012 3456789</div>
+            <div id="email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+              </svg>
+            </div>
+            <div>Email Us<br>info@example.com</div>
+          </div>
+       </div>
+       <div id="nav-two">
+        <div id="sub-nav">
+            <div class="box">HOME</div>
+            <div class="box">ABOUT</div>
+            <div class="box">SERVICE</div>
+            <div class="box">TEAM</div>
+            <div class="box">PROJECT</div>
+            <div class="box">PAGES</div>
+            <div class="box">CONTACT</div>
+        </div>
+        <div id="quote" style="border: 2px solid white; padding: 2px;">Get A Quote</div>
+       </div>
+    </div>
+    <div id="img"><img src="/Tasks/images/Builderz-1 (1).png" alt="Builderz Image"></div>
+    <div id="footer">
+        <div class="items">
+            <div id="worker">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                    <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                    <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+                  </svg>
+            </div>
+            <div id="text-1">
+                <div><h2>Expert Worker</h2></div>
+                <div><p>Lorem ipsum dolor sit amet<br>elit
+                .Phasus nec pretim arnare<br>velit non</p></div>
+            </div>
+        </div>
+        <div class="items">
+            <div id="build">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                    <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                    <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                  </svg>
+            </div>
+            <div id="text-2">
+                <div><h2>Quality Work</h2></div>
+                <div><p>Lorem ipsum dolor sit amet<br>elit
+                .Phasus nec pretim arnare<br>velit non</p></div>
+            </div>
+        </div>
+        <div class="items">
+            <div id="support">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                    <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
+                    <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                  </svg>
+            </div>
+            <div id="text-3">
+                <div><h2>24/7 Support</h2></div>
+                <div><p>Lorem ipsum dolor sit amet<br>elit
+                .Phasus nec pretim arnare<br>velit non</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task-3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style>
+        .main-cont{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px;
+        }
+        .heading{
+            text-align: center;
+        }
+        table{
+            margin: 20px;
+            width: 250px;
+        }
+        table,tr,th{
+            border: 1px solid rgb(214, 214, 214);
+            border-collapse: collapse;
+        }
+        td{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        .cards-cont{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-none shadow">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Enterprise</a>
+            <a class="nav-link" href="#">Support</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a>
+                <button class="btn btn-outline-primary">Sign up</button>
+            </a>
+          </div>
+        </div>
+    </nav>
+    <div class="main-cont">
+        <div class="w-50">
+            <h1 class="heading">Pricing</h1>
+            <p class="heading">
+                Quickly build an effective pricing table for your Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quisquam optio aliquam possimus nostrum similique molestias recusandae unde? Sit eum voluptatum architecto veritatis praesentium veniam vel saepe repellendus adipisci maiores.
+            </p>
+        </div>
+        <div class="cards-cont">
+            <table>
+                <tr>
+                    <th class="bg-light">
+                        <h4 class="text-dark text-center">Free</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="p-3">
+                        <h1 class="text-dark">$0<span class="text-secondary">/mo</span></h1>
+                        <ul>
+                            <li><p class="list-item">10 users included</p></li>
+                            <li><p class="list-item">2GB of storage</p></li>
+                            <li><p class="list-item">Email Support</p></li>
+                            <li><p class="list-item">Help center access</p></li>
+                        </ul>
+                        <button class="w-100 btn btn-outline-primary rounded">Sign up for free</button>
+                    </td>
+
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th class="bg-light">
+                        <h4 class="text-dark text-center">Pro</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="p-3">
+                        <h1 class="text-dark">$15<span class="text-secondary">/mo</span></h1>
+                        <ul>
+                            <li><p class="list-item">20 users included</p></li>
+                            <li><p class="list-item">10GB of storage</p></li>
+                            <li><p class="list-item">Email Support</p></li>
+                            <li><p class="list-item">Help center access</p></li>
+                        </ul>
+                        <button class="w-100 btn btn-primary rounded">Get Started</button>
+                    </td>
+
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th class="bg-light">
+                        <h4 class="text-dark text-center">Enterprise</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="p-3">
+                        <h1 class="text-dark">$29<span class="text-secondary">/mo</span></h1>
+                        <ul>
+                            <li><p class="list-item">20 users included</p></li>
+                            <li><p class="list-item">10GB of storage</p></li>
+                            <li><p class="list-item">Email Support</p></li>
+                            <li><p class="list-item">Help center access</p></li>
+                        </ul>
+                        <button class="w-100 btn btn-primary rounded">Contact us</button>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+        <div class="w-75 pb-4"><div class="hr border border-light"></div></div>
+        <div class="d-flex flex-row justify-content-between w-75">
+            <div class="d-flex flex-column w-25">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bootstrap-fill mb-2" viewBox="0 0 16 16">
+                    <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+                    <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+                </svg>
+                <div class="d-flex flex-row">
+                    <div class="p-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                        <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+                    </svg></div>
+                    <p>2017</p>
+                </div>
+            </div>
+            <div class="w-25">
+                <p class="font-weight-bold">Features</p>
+                <ul>
+                    <li><p>cool stuff</p></li>
+                    <li><p>Random feature</p></li>
+                    <li><p>Team feature</p></li>
+                </ul>
+            </div>
+            <div class="w-25">
+                <p class="font-weight-bold">Resources</p>
+                <ul>
+                    <li><p>cool stuff</p></li>
+                    <li><p>Random feature</p></li>
+                    <li><p>Team feature</p></li>
+                </ul>
+            </div>
+            <div class="w-25">
+                <p class="font-weight-bold">About</p>
+                <ul>
+                    <li><p>cool stuff</p></li>
+                    <li><p>Random feature</p></li>
+                    <li><p>Team feature</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
