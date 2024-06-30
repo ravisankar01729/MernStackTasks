@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 5</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        input,textarea{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        p{
+            color: red;
+        }
+        .borders{
+            border-style: solid;
+            border-color: red;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+        <form id="form">
+            <div>
+                <label for="name">Name:     </label>
+                <input type="text" id="name" value="" />
+                <p id="nameErr"></p>
+            </div>
+            <div>
+                <label for="email">Email:     </label>
+                <input type="email" id="email" value="" />
+                <p id="emailErr"></p>
+            </div>
+            <div>
+                <label for="website">Website:     </label>
+                <input type="text" id="website" value="" />
+                <p id="siteErr"></p>
+            </div>
+            <div>
+                <label for="msg">Message:     </label>
+                <textarea name="message" id="msg"></textarea>
+                <p id="msgErr"></p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="./index.js"></script>
+</body>
+</html>
